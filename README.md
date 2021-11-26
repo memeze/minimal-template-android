@@ -1,4 +1,4 @@
-# MJ Template - Android 
+# Minimal Template - Android 
 
 ## How to use
 
