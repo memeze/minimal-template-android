@@ -2,9 +2,17 @@
 
 ## How to use
 
-## Features
+## Tech stack
+* Minimum SDK level 21
 * 100% Kotlin
-* Clean Architecture + MVVM
 * Hilt for dependency injection
-* Jetpack compose
-* AAC
+* Clean Architecture + MVVM
+* Jetpack
+  * LifeCycle
+  * ViewModel
+  * WorkManager
+  * Room
+  * Paging
+  * Compose
+  * Navigation
+  * Material Design 2.0
