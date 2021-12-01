@@ -16,3 +16,8 @@
   * Compose
   * Navigation
   * Material Design 2.0
+
+</br>
+
+## Guidelines
+This project follows the [`📚 Git commit message style guide`](https://github.com/Man-jae/minimal-guideline/blob/main/git/commit_message.md).
