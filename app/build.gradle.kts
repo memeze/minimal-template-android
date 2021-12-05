@@ -1,17 +1,18 @@
 plugins {
     id("com.android.application")
-    kotlin("android")
+    id("kotlin-android")
 }
 
 android {
-    compileSdk = 31
+    compileSdk = ConfigData.COMPILE_SDK
 
     defaultConfig {
         applicationId = "com.minimal.template"
-        minSdk = 21
-        targetSdk = 31
-        versionCode = 1
-        versionName = "1.0.0"
+        minSdk = ConfigData.MIN_SDK
+        targetSdk = ConfigData.TARGET_SDK
+        versionCode = ConfigData.VERSION_CODE
+        versionName = ConfigData.VERSION_NAME
+
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
     }
@@ -26,18 +27,18 @@ android {
         }
     }
 
+    buildFeatures {
+        compose = true
+    }
+    composeOptions {
+        kotlinCompilerExtensionVersion = Versions.COMPOSE
+    }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
     }
     kotlinOptions {
         jvmTarget = JavaVersion.VERSION_1_8.toString()
-    }
-    buildFeatures {
-        compose = true
-    }
-    composeOptions {
-        kotlinCompilerExtensionVersion = "1.0.1"
     }
     packagingOptions {
         resources {
@@ -47,18 +48,25 @@ android {
 }
 
 dependencies {
-    val composeVersion = "1.0.1"
-    implementation("androidx.core:core-ktx:1.7.0")
-    implementation("androidx.appcompat:appcompat:1.3.1")
-    implementation("com.google.android.material:material:1.4.0")
-    implementation("androidx.compose.ui:ui:$composeVersion")
-    implementation("androidx.compose.material:material:$composeVersion")
-    implementation("androidx.compose.ui:ui-tooling-preview:$composeVersion")
-    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.4.0")
-    implementation("androidx.activity:activity-compose:1.4.0")
-    testImplementation("junit:junit:4.+")
-    androidTestImplementation("androidx.test.ext:junit:1.1.3")
-    androidTestImplementation("androidx.test.espresso:espresso-core:3.4.0")
-    androidTestImplementation("androidx.compose.ui:ui-test-junit4:$composeVersion")
-    debugImplementation("androidx.compose.ui:ui-tooling:$composeVersion")
+    implementation(Deps.AndroidX.appcompat)
+    implementation(Deps.AndroidX.activityCompose)
+
+    implementation(Deps.Compose.ui)
+    implementation(Deps.Compose.material)
+    implementation(Deps.Compose.preview)
+    debugImplementation(Deps.Compose.tooling)
+
+    implementation(Deps.Core.ktx)
+    implementation(Deps.Core.splash)
+
+    implementation(Deps.Google.material)
+
+    implementation(Deps.Lifecycle.runtime)
+
+    implementation(Deps.Navigation.compose)
+
+    testImplementation(Deps.Test.junit)
+    androidTestImplementation(Deps.AndroidTest.junit)
+    androidTestImplementation(Deps.AndroidTest.espresso)
+    androidTestImplementation(Deps.AndroidTest.compose)
 }
