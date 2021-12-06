@@ -1,4 +1,4 @@
-package com.minimal.template.ui.theme
+package com.minimal.template.presentation.ui.theme
 
 import androidx.compose.material.Typography
 import androidx.compose.ui.text.TextStyle
