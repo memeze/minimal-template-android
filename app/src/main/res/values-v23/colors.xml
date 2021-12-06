@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <color name="system_status">@android:color/transparent</color>
-    <color name="system_navigation">@color/immersive_sys_ui</color>
-</resources>

@@ -1,15 +1,5 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
 
-    <style name="Theme.MinimalTemplate" parent="Theme.Material.DayNight.NoActionBar">
-        <item name="android:statusBarColor">@color/system_status</item>
-        <item name="android:navigationBarColor">@color/system_navigation</item>
-        <item name="android:windowLightStatusBar" tools:targetApi="23">@bool/use_light</item>
-        <item name="android:windowLightNavigationBar" tools:targetApi="27">@bool/use_light</item>
-    </style>
+    <style name="Theme.MinimalTemplate" parent="@android:style/Theme.Material.Light.NoActionBar" />
 
-    <style name="Theme.Material.DayNight.NoActionBar" parent="@android:style/Theme.Material.Light.NoActionBar" />
-
-    <style name="Theme.MinimalTemplate.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
-
-    <style name="Theme.MinimalTemplate.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>
