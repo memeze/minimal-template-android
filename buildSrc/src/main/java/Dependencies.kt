@@ -19,6 +19,22 @@ object Deps {
         val fragmentKtx by lazy { "androidx.fragment:fragment-ktx:${Versions.FRAGMENT}" }
     }
 
+    object Accompanist {
+        val insets by lazy { "com.google.accompanist:accompanist-insets:${Versions.ACCOMPANIST}" }
+        val insetsUi by lazy { "com.google.accompanist:accompanist-insets-ui:${Versions.ACCOMPANIST}" }
+        val systemUiController by lazy { "com.google.accompanist:accompanist-insets-ui:${Versions.ACCOMPANIST}" }
+        val appCompatTheme by lazy { "com.google.accompanist:accompanist-appcompat-theme:${Versions.ACCOMPANIST}" }
+        val pager by lazy { "com.google.accompanist:accompanist-pager:${Versions.ACCOMPANIST}" }
+        val pagerIndicators by lazy { "com.google.accompanist:accompanist-pager-indicators:${Versions.ACCOMPANIST}" }
+        val swipeRefresh by lazy { "com.google.accompanist:accompanist-swiperefresh:${Versions.ACCOMPANIST}" }
+        val placeHolder by lazy { "com.google.accompanist:accompanist-placeholder-material:${Versions.ACCOMPANIST}" }
+        val drawablePainter by lazy { "com.google.accompanist:accompanist-drawablepainter:${Versions.ACCOMPANIST}" }
+        val flowLayout by lazy { "com.google.accompanist:accompanist-flowlayout:${Versions.ACCOMPANIST}" }
+        val permissions by lazy { "com.google.accompanist:accompanist-permissions:${Versions.ACCOMPANIST}" }
+        val navigationAnimation by lazy { "com.google.accompanist:accompanist-navigation-animation:${Versions.ACCOMPANIST}" }
+        val navigationMaterial by lazy { "com.google.accompanist:accompanist-navigation-material:${Versions.ACCOMPANIST}" }
+    }
+
     object Compose {
         val ui by lazy { "androidx.compose.ui:ui:${Versions.COMPOSE}" }
         val tooling by lazy { "androidx.compose.ui:ui-tooling:${Versions.COMPOSE}" }
