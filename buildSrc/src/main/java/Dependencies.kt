@@ -22,7 +22,7 @@ object Deps {
     object Accompanist {
         val insets by lazy { "com.google.accompanist:accompanist-insets:${Versions.ACCOMPANIST}" }
         val insetsUi by lazy { "com.google.accompanist:accompanist-insets-ui:${Versions.ACCOMPANIST}" }
-        val systemUiController by lazy { "com.google.accompanist:accompanist-insets-ui:${Versions.ACCOMPANIST}" }
+        val systemUiController by lazy { "com.google.accompanist:accompanist-systemuicontroller:${Versions.ACCOMPANIST}" }
         val appCompatTheme by lazy { "com.google.accompanist:accompanist-appcompat-theme:${Versions.ACCOMPANIST}" }
         val pager by lazy { "com.google.accompanist:accompanist-pager:${Versions.ACCOMPANIST}" }
         val pagerIndicators by lazy { "com.google.accompanist:accompanist-pager-indicators:${Versions.ACCOMPANIST}" }
