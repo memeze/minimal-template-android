@@ -14,7 +14,8 @@
   - [Lifecycle](https://developer.android.com/topic/libraries/architecture/lifecycle)
   - [ViewModel](https://developer.android.com/topic/libraries/architecture/viewmodel)
   - [Room](https://developer.android.com/topic/libraries/architecture/room)
-  - [Compose](https://developer.android.com/jetpack/compose/documentation)
+  - [Compose](https://developer.android.com/jetpack/compose/documentation) - Android’s modern toolkit for building native UI
+  - [Accompanist](https://google.github.io/accompanist/) - This library group complements Jetpack Compose with features developers need but not yet available.
   - [Navigation](https://developer.android.com/guide/navigation)
   - [Paging](https://developer.android.com/jetpack/androidx/releases/paging)
   - [Datastore](https://developer.android.com/topic/libraries/architecture/datastore)
