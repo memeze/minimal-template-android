@@ -3,6 +3,7 @@
     package="com.minimal.template">
 
     <application
+        android:name=".MinimalTemplate"
         android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -12,8 +13,7 @@
 
         <activity
             android:name=".presentation.MainActivity"
-            android:exported="true"
-            android:label="@string/app_name">
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
