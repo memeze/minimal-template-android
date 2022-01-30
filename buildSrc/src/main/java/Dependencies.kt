@@ -14,10 +14,7 @@ object Deps {
     object AndroidX {
         val appcompat by lazy { "androidx.appcompat:appcompat:${Versions.APPCOMPAT}" }
         val dataStore by lazy { "androidx.datastore:datastore-preferences:${Versions.DATASTORE}" }
-        val constraintLayout by lazy { "androidx.constraintlayout:constraintlayout:${Versions.CONSTRAINT_LAYOUT}" }
         val activityCompose by lazy { "androidx.activity:activity-compose:${Versions.ACTIVITY}" }
-        val activityKtx by lazy { "androidx.activity:activity-ktx:${Versions.ACTIVITY}" }
-        val fragmentKtx by lazy { "androidx.fragment:fragment-ktx:${Versions.FRAGMENT}" }
     }
 
     object Accompanist {
@@ -48,11 +45,6 @@ object Deps {
         val splash by lazy { "androidx.core:core-splashscreen:${Versions.SPLASH}" }
     }
 
-    object Glide {
-        val glide by lazy { "com.github.bumptech.glide:glide:${Versions.GLIDE}" }
-        val compiler by lazy { "com.github.bumptech.glide:compiler:${Versions.GLIDE}" }
-    }
-
     object Google {
         val material by lazy { "com.google.android.material:material:${Versions.MATERIAL}" }
     }
@@ -77,7 +69,6 @@ object Deps {
     }
 
     object Navigation {
-        val fragment by lazy { "androidx.navigation:navigation-fragment-ktx:${Versions.Navigation.COMMON}" }
         val ui by lazy { "androidx.navigation:navigation-ui-ktx:${Versions.Navigation.COMMON}" }
         val compose by lazy { "androidx.navigation:navigation-compose:${Versions.Navigation.COMPOSE}" }
         val testing by lazy { "androidx.navigation:navigation-testing:${Versions.Navigation.COMMON}" }
@@ -87,12 +78,11 @@ object Deps {
         val ktx by lazy { "androidx.room:room-ktx:${Versions.ROOM}" }
         val runtime by lazy { "androidx.room:room-runtime:${Versions.ROOM}" }
         val compiler by lazy { "androidx.room:room-compiler:${Versions.ROOM}" }
+        val room by lazy { "androidx.room:room-testing:${Versions.ROOM}" }
     }
 
     object Test {
         val junit by lazy { "junit:junit:${Versions.JUNIT}" }
-        val room by lazy { "androidx.room:room-testing:${Versions.ROOM}" }
-        val koin by lazy { "io.insert-koin:koin-test-junit4:${Versions.KOIN}" }
     }
 
     object AndroidTest {
