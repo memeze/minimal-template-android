@@ -7,3 +7,5 @@ dependencyResolutionManagement {
 }
 rootProject.name = "MinimalTemplate"
 include(":app")
+include(":data")
+include(":domain")

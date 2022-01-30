@@ -1,6 +1,8 @@
 plugins {
+    kotlin("android")
+    kotlin("kapt")
+    id("dagger.hilt.android.plugin")
     id("com.android.application")
-    id("kotlin-android")
 }
 
 android {
@@ -48,6 +50,9 @@ android {
 }
 
 dependencies {
+    implementation(project(":data"))
+    implementation(project(":domain"))
+
     implementation(Deps.AndroidX.appcompat)
     implementation(Deps.AndroidX.activityCompose)
 
@@ -74,6 +79,9 @@ dependencies {
     implementation(Deps.Core.splash)
 
     implementation(Deps.Google.material)
+
+    implementation(Deps.Hilt.android)
+    kapt(Deps.Hilt.compiler)
 
     implementation(Deps.Lifecycle.runtime)
 

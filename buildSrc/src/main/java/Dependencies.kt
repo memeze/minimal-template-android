@@ -4,6 +4,7 @@
 object BuildPlugins {
     val android by lazy { "com.android.tools.build:gradle:${Versions.GRADLE_PLUGIN}" }
     val kotlin by lazy { "org.jetbrains.kotlin:kotlin-gradle-plugin:${Versions.KOTLIN}" }
+    val hilt by lazy { "com.google.dagger:hilt-android-gradle-plugin:${Versions.HILT}" }
 }
 
 /**
@@ -98,6 +99,13 @@ object Deps {
         val junit by lazy { "androidx.test.ext:junit:1.1.3" }
         val espresso by lazy { "androidx.test.espresso:espresso-core:3.4.0" }
         val compose by lazy { "androidx.compose.ui:ui-test-junit4:${Versions.COMPOSE}" }
+    }
+
+    object Network {
+        val retrofit by lazy { "com.squareup.retrofit2:retrofit:${Versions.RETROFIT}" }
+        val retrofitConverterGson by lazy { "com.squareup.retrofit2:converter-gson:${Versions.RETROFIT}" }
+        val okhttp by lazy { "com.squareup.okhttp3:okhttp:${Versions.OKHTTP}" }
+        val okhttpLoggingInterceptor by lazy { "com.squareup.okhttp3:logging-interceptor:${Versions.OKHTTP}" }
     }
 
     val kotlin by lazy { "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${Versions.KOTLIN}" }

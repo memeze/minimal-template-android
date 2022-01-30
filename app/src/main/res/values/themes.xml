@@ -1,5 +1,4 @@
 <resources>
 
     <style name="Theme.MinimalTemplate" parent="@android:style/Theme.Material.Light.NoActionBar" />
-
 </resources>

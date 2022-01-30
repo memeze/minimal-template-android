@@ -16,6 +16,8 @@ object Versions {
     const val KOIN = "3.1.2"
     const val ROOM = "2.3.0"
     const val GLIDE = "4.12.0"
+    const val RETROFIT = "2.9.0"
+    const val OKHTTP = "4.9.0"
 
     object Navigation {
         const val COMMON = "2.3.5"
