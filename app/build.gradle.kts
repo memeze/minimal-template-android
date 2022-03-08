@@ -71,9 +71,10 @@ dependencies {
     implementation(Deps.Accompanist.navigationMaterial)
 
     implementation(Deps.Compose.ui)
-    implementation(Deps.Compose.material)
-    implementation(Deps.Compose.preview)
     debugImplementation(Deps.Compose.tooling)
+    implementation(Deps.Compose.preview)
+    implementation(Deps.Compose.material)
+    androidTestImplementation(Deps.Compose.test)
 
     implementation(Deps.Core.ktx)
     implementation(Deps.Core.splash)
@@ -81,14 +82,19 @@ dependencies {
     implementation(Deps.Google.material)
 
     implementation(Deps.Hilt.android)
+    kapt(Deps.Hilt.androidCompiler)
+    implementation(Deps.Hilt.viewModel)
+    implementation(Deps.Hilt.workManager)
     kapt(Deps.Hilt.compiler)
 
     implementation(Deps.Lifecycle.runtime)
 
+    implementation(Deps.Navigation.ui)
     implementation(Deps.Navigation.compose)
+    androidTestImplementation(Deps.Navigation.testing)
 
-    testImplementation(Deps.Test.junit)
-    androidTestImplementation(Deps.AndroidTest.junit)
+    implementation(Deps.timber)
+
+    testImplementation(Deps.Junit.junit)
     androidTestImplementation(Deps.AndroidTest.espresso)
-    androidTestImplementation(Deps.AndroidTest.compose)
 }

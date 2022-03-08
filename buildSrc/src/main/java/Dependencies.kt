@@ -38,6 +38,7 @@ object Deps {
         val tooling by lazy { "androidx.compose.ui:ui-tooling:${Versions.COMPOSE}" }
         val preview by lazy { "androidx.compose.ui:ui-tooling-preview:${Versions.COMPOSE}" }
         val material by lazy { "androidx.compose.material:material:${Versions.COMPOSE}" }
+        val test by lazy { "androidx.compose.ui:ui-test-junit4:${Versions.COMPOSE}" }
     }
 
     object Core {
@@ -51,21 +52,20 @@ object Deps {
 
     object Hilt {
         val android by lazy { "com.google.dagger:hilt-android:${Versions.HILT}" }
-        val compiler by lazy { "com.google.dagger:hilt-android-compiler:${Versions.HILT}" }
-    }
-
-    object Koin {
-        val android by lazy { "io.insert-koin:koin-android:${Versions.KOIN}" }
-        val compose by lazy { "io.insert-koin:koin-androidx-compose:${Versions.KOIN}" }
-        val workmanager by lazy { "io.insert-koin:koin-androidx-workmanager:${Versions.KOIN}" }
+        val androidCompiler by lazy { "com.google.dagger:hilt-android-compiler:${Versions.HILT}" }
+        val viewModel by lazy { "androidx.hilt:hilt-lifecycle-viewmodel:${Versions.HILT_JETPACK}" }
+        val workManager by lazy { "androidx.hilt:hilt-work:${Versions.HILT_JETPACK}" }
+        val compiler by lazy { "androidx.hilt:hilt-compiler:${Versions.HILT_JETPACK}" }
     }
 
     object Lifecycle {
-        val common by lazy { "androidx.lifecycle:lifecycle-common-java8:${Versions.Lifecycle.COMMON}" }
-        val runtime by lazy { "androidx.lifecycle:lifecycle-runtime-ktx:${Versions.Lifecycle.COMMON}" }
-        val viewmodel by lazy { "androidx.lifecycle:lifecycle-viewmodel-ktx:${Versions.Lifecycle.COMMON}" }
-        val livedata by lazy { "androidx.lifecycle:lifecycle-livedata-ktx:${Versions.Lifecycle.COMMON}" }
-        val extensions by lazy { "androidx.lifecycle:lifecycle-extensions:${Versions.Lifecycle.EXTENSIONS}" }
+        val viewmodel by lazy { "androidx.lifecycle:lifecycle-viewmodel-ktx:${Versions.LIFECYCLE}" }
+        val viewmodelCompose by lazy { "androidx.lifecycle:lifecycle-viewmodel-compose:${Versions.LIFECYCLE}" }
+        val livedata by lazy { "androidx.lifecycle:lifecycle-livedata-ktx:${Versions.LIFECYCLE}" }
+        val runtime by lazy { "androidx.lifecycle:lifecycle-runtime-ktx:${Versions.LIFECYCLE}" }
+        val viewmodelSavedState by lazy { "androidx.lifecycle:lifecycle-viewmodel-savedstate:${Versions.LIFECYCLE}" }
+        val compiler by lazy { "androidx.lifecycle:lifecycle-compiler:${Versions.LIFECYCLE}" }
+        val common by lazy { "androidx.lifecycle:lifecycle-common-java8:${Versions.LIFECYCLE}" }
     }
 
     object Navigation {
@@ -78,17 +78,16 @@ object Deps {
         val ktx by lazy { "androidx.room:room-ktx:${Versions.ROOM}" }
         val runtime by lazy { "androidx.room:room-runtime:${Versions.ROOM}" }
         val compiler by lazy { "androidx.room:room-compiler:${Versions.ROOM}" }
-        val room by lazy { "androidx.room:room-testing:${Versions.ROOM}" }
+        val test by lazy { "androidx.room:room-testing:${Versions.ROOM}" }
     }
 
-    object Test {
+    object Junit {
         val junit by lazy { "junit:junit:${Versions.JUNIT}" }
+        val test by lazy { "androidx.test.ext:junit:${Versions.JUNIT_TEST}" }
     }
 
     object AndroidTest {
-        val junit by lazy { "androidx.test.ext:junit:1.1.3" }
         val espresso by lazy { "androidx.test.espresso:espresso-core:3.4.0" }
-        val compose by lazy { "androidx.compose.ui:ui-test-junit4:${Versions.COMPOSE}" }
     }
 
     object Network {
@@ -98,5 +97,6 @@ object Deps {
         val okhttpLoggingInterceptor by lazy { "com.squareup.okhttp3:logging-interceptor:${Versions.OKHTTP}" }
     }
 
+    val timber by lazy { "com.jakewharton.timber:timber:${Versions.TIMBER}" }
     val kotlin by lazy { "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${Versions.KOTLIN}" }
 }

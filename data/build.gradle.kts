@@ -44,9 +44,11 @@ dependencies {
     api(Deps.Network.okhttpLoggingInterceptor)
 
     implementation(Deps.Hilt.android)
+    kapt(Deps.Hilt.androidCompiler)
+    implementation(Deps.Hilt.viewModel)
+    implementation(Deps.Hilt.workManager)
     kapt(Deps.Hilt.compiler)
 
-    testImplementation(Deps.Test.junit)
-    androidTestImplementation(Deps.AndroidTest.junit)
+    testImplementation(Deps.Junit.junit)
     androidTestImplementation(Deps.AndroidTest.espresso)
 }
