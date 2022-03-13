@@ -49,6 +49,8 @@ dependencies {
     implementation(Deps.Hilt.workManager)
     kapt(Deps.Hilt.compiler)
 
+    implementation(Deps.timber)
+
     testImplementation(Deps.Junit.junit)
     androidTestImplementation(Deps.AndroidTest.espresso)
 }
