@@ -58,6 +58,10 @@ object Deps {
         val compiler by lazy { "androidx.hilt:hilt-compiler:${Versions.HILT_JETPACK}" }
     }
 
+    object Kotlinx {
+        val coroutines by lazy { "org.jetbrains.kotlinx:kotlinx-coroutines-android:${Versions.COROUTINES}" }
+    }
+
     object Lifecycle {
         val viewmodel by lazy { "androidx.lifecycle:lifecycle-viewmodel-ktx:${Versions.LIFECYCLE}" }
         val viewmodelCompose by lazy { "androidx.lifecycle:lifecycle-viewmodel-compose:${Versions.LIFECYCLE}" }

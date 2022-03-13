@@ -36,6 +36,8 @@ dependencies {
     implementation(Deps.AndroidX.appcompat)
     implementation(Deps.Google.material)
 
+    implementation(Deps.Kotlinx.coroutines)
+
     implementation(Deps.Hilt.android)
     kapt(Deps.Hilt.androidCompiler)
     implementation(Deps.Hilt.viewModel)

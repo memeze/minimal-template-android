@@ -1,6 +1,7 @@
 object Versions {
     const val ACCOMPANIST = "0.20.2"    // Used in compose 1.0.x version
     const val CORE_KTX = "1.6.0"
+    const val COROUTINES = "1.6.0"
     const val SPLASH = "1.0.0-alpha02"
     const val APPCOMPAT = "1.3.1"
     const val GRADLE_PLUGIN = "7.0.3"
