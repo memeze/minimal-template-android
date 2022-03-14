@@ -10,7 +10,7 @@ object BuildPlugins {
 /**
  * To defines dependencies
  */
-object Deps {
+object Libs {
     object AndroidX {
         val appcompat by lazy { "androidx.appcompat:appcompat:${Versions.APPCOMPAT}" }
         val dataStore by lazy { "androidx.datastore:datastore-preferences:${Versions.DATASTORE}" }
@@ -53,7 +53,6 @@ object Deps {
     object Hilt {
         val android by lazy { "com.google.dagger:hilt-android:${Versions.HILT}" }
         val androidCompiler by lazy { "com.google.dagger:hilt-android-compiler:${Versions.HILT}" }
-        val viewModel by lazy { "androidx.hilt:hilt-lifecycle-viewmodel:${Versions.HILT_JETPACK}" }
         val workManager by lazy { "androidx.hilt:hilt-work:${Versions.HILT_JETPACK}" }
         val compiler by lazy { "androidx.hilt:hilt-compiler:${Versions.HILT_JETPACK}" }
     }
@@ -73,9 +72,9 @@ object Deps {
     }
 
     object Navigation {
-        val ui by lazy { "androidx.navigation:navigation-ui-ktx:${Versions.Navigation.COMMON}" }
-        val compose by lazy { "androidx.navigation:navigation-compose:${Versions.Navigation.COMPOSE}" }
-        val testing by lazy { "androidx.navigation:navigation-testing:${Versions.Navigation.COMMON}" }
+        val ui by lazy { "androidx.navigation:navigation-ui-ktx:${Versions.NAVIGATION}" }
+        val compose by lazy { "androidx.navigation:navigation-compose:${Versions.NAVIGATION_COMPOSE}" }
+        val testing by lazy { "androidx.navigation:navigation-testing:${Versions.NAVIGATION}" }
     }
 
     object Room {

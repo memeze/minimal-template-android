@@ -34,23 +34,22 @@ android {
 dependencies {
     implementation(project(":domain"))
 
-    implementation(Deps.Core.ktx)
-    implementation(Deps.AndroidX.appcompat)
-    implementation(Deps.Google.material)
+    implementation(Libs.Core.ktx)
+    implementation(Libs.AndroidX.appcompat)
+    implementation(Libs.Google.material)
 
-    api(Deps.Network.retrofit)
-    api(Deps.Network.retrofitConverterGson)
-    api(Deps.Network.okhttp)
-    api(Deps.Network.okhttpLoggingInterceptor)
+    api(Libs.Network.retrofit)
+    api(Libs.Network.retrofitConverterGson)
+    api(Libs.Network.okhttp)
+    api(Libs.Network.okhttpLoggingInterceptor)
 
-    implementation(Deps.Hilt.android)
-    kapt(Deps.Hilt.androidCompiler)
-    implementation(Deps.Hilt.viewModel)
-    implementation(Deps.Hilt.workManager)
-    kapt(Deps.Hilt.compiler)
+    implementation(Libs.Hilt.android)
+    kapt(Libs.Hilt.androidCompiler)
+    implementation(Libs.Hilt.workManager)
+    kapt(Libs.Hilt.compiler)
 
-    implementation(Deps.timber)
+    implementation(Libs.timber)
 
-    testImplementation(Deps.Junit.junit)
-    androidTestImplementation(Deps.AndroidTest.espresso)
+    testImplementation(Libs.Junit.junit)
+    androidTestImplementation(Libs.AndroidTest.espresso)
 }

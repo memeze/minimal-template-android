@@ -32,20 +32,19 @@ android {
 }
 
 dependencies {
-    implementation(Deps.Core.ktx)
-    implementation(Deps.AndroidX.appcompat)
-    implementation(Deps.Google.material)
+    implementation(Libs.Core.ktx)
+    implementation(Libs.AndroidX.appcompat)
+    implementation(Libs.Google.material)
 
-    implementation(Deps.Kotlinx.coroutines)
+    implementation(Libs.Kotlinx.coroutines)
 
-    implementation(Deps.Hilt.android)
-    kapt(Deps.Hilt.androidCompiler)
-    implementation(Deps.Hilt.viewModel)
-    implementation(Deps.Hilt.workManager)
-    kapt(Deps.Hilt.compiler)
+    implementation(Libs.Hilt.android)
+    kapt(Libs.Hilt.androidCompiler)
+    implementation(Libs.Hilt.workManager)
+    kapt(Libs.Hilt.compiler)
 
-    implementation(Deps.timber)
+    implementation(Libs.timber)
 
-    testImplementation(Deps.Junit.junit)
-    androidTestImplementation(Deps.AndroidTest.espresso)
+    testImplementation(Libs.Junit.junit)
+    androidTestImplementation(Libs.AndroidTest.espresso)
 }
