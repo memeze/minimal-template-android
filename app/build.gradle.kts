@@ -86,7 +86,13 @@ dependencies {
     implementation(Libs.Hilt.workManager)
     kapt(Libs.Hilt.compiler)
 
+    implementation(Libs.Lifecycle.viewmodel)
+    implementation(Libs.Lifecycle.viewmodelCompose)
+    implementation(Libs.Lifecycle.livedata)
     implementation(Libs.Lifecycle.runtime)
+    implementation(Libs.Lifecycle.viewmodelSavedState)
+    kapt(Libs.Lifecycle.compiler)
+    implementation(Libs.Lifecycle.common)
 
     implementation(Libs.Navigation.ui)
     implementation(Libs.Navigation.compose)
